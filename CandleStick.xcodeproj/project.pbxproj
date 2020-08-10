@@ -3,27 +3,59 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		368CCB6F24E1155D004798ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCB6E24E1155D004798ED /* AppDelegate.swift */; };
 		368CCB7124E1155D004798ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCB7024E1155D004798ED /* SceneDelegate.swift */; };
-		368CCB7324E1155D004798ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCB7224E1155D004798ED /* ViewController.swift */; };
 		368CCB7624E1155D004798ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368CCB7424E1155D004798ED /* Main.storyboard */; };
 		368CCB7824E1155E004798ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368CCB7724E1155E004798ED /* Assets.xcassets */; };
 		368CCB7B24E1155E004798ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368CCB7924E1155E004798ED /* LaunchScreen.storyboard */; };
+		368CCB8624E1177A004798ED /* GeneralProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCB8524E1177A004798ED /* GeneralProvider.swift */; };
+		368CCB8824E1178F004798ED /* GeneralService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCB8724E1178F004798ED /* GeneralService.swift */; };
+		368CCB8B24E118DB004798ED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCB8A24E118DB004798ED /* Constants.swift */; };
+		368CCB8F24E11A0D004798ED /* responseQuotesMonth.json in Resources */ = {isa = PBXBuildFile; fileRef = 368CCB8D24E11A0C004798ED /* responseQuotesMonth.json */; };
+		368CCB9024E11A0D004798ED /* responseQuotesWeek.json in Resources */ = {isa = PBXBuildFile; fileRef = 368CCB8E24E11A0C004798ED /* responseQuotesWeek.json */; };
+		368CCB9324E11A4F004798ED /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCB9224E11A4F004798ED /* FileReader.swift */; };
+		368CCB9624E120D4004798ED /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCB9524E120D4004798ED /* Quotes.swift */; };
+		368CCB9824E12167004798ED /* QuoteSymbolsResponseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCB9724E12167004798ED /* QuoteSymbolsResponseResponse.swift */; };
+		368CCB9A24E12B2A004798ED /* PerformanceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCB9924E12B2A004798ED /* PerformanceCalculator.swift */; };
+		368CCBC324E13C10004798ED /* ChartSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCBC124E13C10004798ED /* ChartSelectionViewController.swift */; };
+		368CCBC424E13C10004798ED /* ChartSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368CCBC224E13C10004798ED /* ChartSelectionViewController.xib */; };
+		368CCBC724E13FDD004798ED /* UIViewController+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCBC624E13FDD004798ED /* UIViewController+Nib.swift */; };
+		368CCBD624E14708004798ED /* ChartDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCBD424E14708004798ED /* ChartDataViewController.swift */; };
+		368CCBD724E14708004798ED /* ChartDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 368CCBD524E14708004798ED /* ChartDataViewController.xib */; };
+		368CCBD924E14732004798ED /* ChartDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368CCBD824E14732004798ED /* ChartDataViewModel.swift */; };
+		613FAC4E7BBFA03BA24C4D7F /* Pods_CandleStick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC5A7F601ACC2B05F9E6D0B8 /* Pods_CandleStick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		368CCB6B24E1155D004798ED /* CandleStick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CandleStick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		368CCB6E24E1155D004798ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		368CCB7024E1155D004798ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		368CCB7224E1155D004798ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		368CCB7524E1155D004798ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		368CCB7724E1155E004798ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		368CCB7A24E1155E004798ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		368CCB7C24E1155E004798ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		368CCB8524E1177A004798ED /* GeneralProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralProvider.swift; sourceTree = "<group>"; };
+		368CCB8724E1178F004798ED /* GeneralService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralService.swift; sourceTree = "<group>"; };
+		368CCB8A24E118DB004798ED /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		368CCB8D24E11A0C004798ED /* responseQuotesMonth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = responseQuotesMonth.json; sourceTree = "<group>"; };
+		368CCB8E24E11A0C004798ED /* responseQuotesWeek.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = responseQuotesWeek.json; sourceTree = "<group>"; };
+		368CCB9224E11A4F004798ED /* FileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
+		368CCB9524E120D4004798ED /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
+		368CCB9724E12167004798ED /* QuoteSymbolsResponseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteSymbolsResponseResponse.swift; sourceTree = "<group>"; };
+		368CCB9924E12B2A004798ED /* PerformanceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceCalculator.swift; sourceTree = "<group>"; };
+		368CCBC124E13C10004798ED /* ChartSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartSelectionViewController.swift; sourceTree = "<group>"; };
+		368CCBC224E13C10004798ED /* ChartSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChartSelectionViewController.xib; sourceTree = "<group>"; };
+		368CCBC624E13FDD004798ED /* UIViewController+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Nib.swift"; sourceTree = "<group>"; };
+		368CCBD424E14708004798ED /* ChartDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataViewController.swift; sourceTree = "<group>"; };
+		368CCBD524E14708004798ED /* ChartDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartDataViewController.xib; sourceTree = "<group>"; };
+		368CCBD824E14732004798ED /* ChartDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataViewModel.swift; sourceTree = "<group>"; };
+		8F3DDC8C067B0E10903BA0BD /* Pods-CandleStick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandleStick.debug.xcconfig"; path = "Target Support Files/Pods-CandleStick/Pods-CandleStick.debug.xcconfig"; sourceTree = "<group>"; };
+		C2A693B63C90DC90BE3C953F /* Pods-CandleStick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandleStick.release.xcconfig"; path = "Target Support Files/Pods-CandleStick/Pods-CandleStick.release.xcconfig"; sourceTree = "<group>"; };
+		CC5A7F601ACC2B05F9E6D0B8 /* Pods_CandleStick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CandleStick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +63,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				613FAC4E7BBFA03BA24C4D7F /* Pods_CandleStick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14B43C8AF2496ABDBAD7E3E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC5A7F601ACC2B05F9E6D0B8 /* Pods_CandleStick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		368CCB6224E1155D004798ED = {
 			isa = PBXGroup;
 			children = (
 				368CCB6D24E1155D004798ED /* CandleStick */,
 				368CCB6C24E1155D004798ED /* Products */,
+				BE9DAD6FC9214517BD513BF4 /* Pods */,
+				14B43C8AF2496ABDBAD7E3E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +99,102 @@
 		368CCB6D24E1155D004798ED /* CandleStick */ = {
 			isa = PBXGroup;
 			children = (
+				368CCBC524E13FBA004798ED /* Extensions */,
+				368CCB9424E120C1004798ED /* Models */,
+				368CCB9124E11A42004798ED /* Utils */,
+				368CCB8C24E119DC004798ED /* Resources */,
+				368CCB8924E118CF004798ED /* Constants */,
+				368CCB8424E11743004798ED /* Networking */,
+				368CCBA124E13A9A004798ED /* Flows */,
 				368CCB6E24E1155D004798ED /* AppDelegate.swift */,
 				368CCB7024E1155D004798ED /* SceneDelegate.swift */,
-				368CCB7224E1155D004798ED /* ViewController.swift */,
 				368CCB7424E1155D004798ED /* Main.storyboard */,
 				368CCB7724E1155E004798ED /* Assets.xcassets */,
 				368CCB7924E1155E004798ED /* LaunchScreen.storyboard */,
 				368CCB7C24E1155E004798ED /* Info.plist */,
 			);
 			path = CandleStick;
+			sourceTree = "<group>";
+		};
+		368CCB8424E11743004798ED /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				368CCB8524E1177A004798ED /* GeneralProvider.swift */,
+				368CCB8724E1178F004798ED /* GeneralService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		368CCB8924E118CF004798ED /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				368CCB8A24E118DB004798ED /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		368CCB8C24E119DC004798ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				368CCB8D24E11A0C004798ED /* responseQuotesMonth.json */,
+				368CCB8E24E11A0C004798ED /* responseQuotesWeek.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		368CCB9124E11A42004798ED /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				368CCB9224E11A4F004798ED /* FileReader.swift */,
+				368CCB9924E12B2A004798ED /* PerformanceCalculator.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		368CCB9424E120C1004798ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				368CCB9524E120D4004798ED /* Quotes.swift */,
+				368CCB9724E12167004798ED /* QuoteSymbolsResponseResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		368CCBA124E13A9A004798ED /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				368CCBD324E146EA004798ED /* ChartData */,
+				368CCBC124E13C10004798ED /* ChartSelectionViewController.swift */,
+				368CCBC224E13C10004798ED /* ChartSelectionViewController.xib */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		368CCBC524E13FBA004798ED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				368CCBC624E13FDD004798ED /* UIViewController+Nib.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		368CCBD324E146EA004798ED /* ChartData */ = {
+			isa = PBXGroup;
+			children = (
+				368CCBD824E14732004798ED /* ChartDataViewModel.swift */,
+				368CCBD424E14708004798ED /* ChartDataViewController.swift */,
+				368CCBD524E14708004798ED /* ChartDataViewController.xib */,
+			);
+			path = ChartData;
+			sourceTree = "<group>";
+		};
+		BE9DAD6FC9214517BD513BF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F3DDC8C067B0E10903BA0BD /* Pods-CandleStick.debug.xcconfig */,
+				C2A693B63C90DC90BE3C953F /* Pods-CandleStick.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 368CCB7F24E1155E004798ED /* Build configuration list for PBXNativeTarget "CandleStick" */;
 			buildPhases = (
+				9B855D0F4732174A1875B563 /* [CP] Check Pods Manifest.lock */,
 				368CCB6724E1155D004798ED /* Sources */,
 				368CCB6824E1155D004798ED /* Frameworks */,
 				368CCB6924E1155D004798ED /* Resources */,
+				F32CE20F5997BDB5AB6EC198 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,22 +257,78 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368CCBC424E13C10004798ED /* ChartSelectionViewController.xib in Resources */,
 				368CCB7B24E1155E004798ED /* LaunchScreen.storyboard in Resources */,
+				368CCB9024E11A0D004798ED /* responseQuotesWeek.json in Resources */,
 				368CCB7824E1155E004798ED /* Assets.xcassets in Resources */,
+				368CCB8F24E11A0D004798ED /* responseQuotesMonth.json in Resources */,
 				368CCB7624E1155D004798ED /* Main.storyboard in Resources */,
+				368CCBD724E14708004798ED /* ChartDataViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B855D0F4732174A1875B563 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CandleStick-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F32CE20F5997BDB5AB6EC198 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CandleStick/Pods-CandleStick-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CandleStick/Pods-CandleStick-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CandleStick/Pods-CandleStick-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		368CCB6724E1155D004798ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				368CCB7324E1155D004798ED /* ViewController.swift in Sources */,
 				368CCB6F24E1155D004798ED /* AppDelegate.swift in Sources */,
+				368CCB8624E1177A004798ED /* GeneralProvider.swift in Sources */,
+				368CCBD624E14708004798ED /* ChartDataViewController.swift in Sources */,
+				368CCBC724E13FDD004798ED /* UIViewController+Nib.swift in Sources */,
+				368CCB8824E1178F004798ED /* GeneralService.swift in Sources */,
+				368CCB8B24E118DB004798ED /* Constants.swift in Sources */,
+				368CCB9824E12167004798ED /* QuoteSymbolsResponseResponse.swift in Sources */,
+				368CCB9324E11A4F004798ED /* FileReader.swift in Sources */,
 				368CCB7124E1155D004798ED /* SceneDelegate.swift in Sources */,
+				368CCB9A24E12B2A004798ED /* PerformanceCalculator.swift in Sources */,
+				368CCBC324E13C10004798ED /* ChartSelectionViewController.swift in Sources */,
+				368CCBD924E14732004798ED /* ChartDataViewModel.swift in Sources */,
+				368CCB9624E120D4004798ED /* Quotes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +470,7 @@
 		};
 		368CCB8024E1155E004798ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F3DDC8C067B0E10903BA0BD /* Pods-CandleStick.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +488,7 @@
 		};
 		368CCB8124E1155E004798ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2A693B63C90DC90BE3C953F /* Pods-CandleStick.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

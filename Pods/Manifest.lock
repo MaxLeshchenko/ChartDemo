@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.2.2)
+  - Charts (3.5.0):
+    - Charts/Core (= 3.5.0)
+  - Charts/Core (3.5.0)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+
+DEPENDENCIES:
+  - Charts
+  - Moya (~> 14.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Charts
+    - Moya
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+
+PODFILE CHECKSUM: 90c960f2d4875e9f1f2fcadd194921bb79d28d90
+
+COCOAPODS: 1.9.3

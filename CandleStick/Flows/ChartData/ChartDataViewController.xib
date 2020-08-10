@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChartDataViewController" customModule="CandleStick" customModuleProvider="target">
+            <connections>
+                <outlet property="AAPLCandleStickChartView" destination="Iod-wT-our" id="9m9-5C-hBZ"/>
+                <outlet property="MSFTCandleStickChartView" destination="fvT-zd-1L1" id="mKf-lX-iMx"/>
+                <outlet property="SPYCandleStickChartView" destination="Ydo-A6-kZ1" id="8Dk-l7-DMb"/>
+                <outlet property="chartDataTitleLabel" destination="UmA-mR-85J" id="s1T-Gd-XiP"/>
+                <outlet property="lineChartView" destination="UYf-54-lz5" id="7nm-rd-eF5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c2D-ZQ-fMl">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iod-wT-our" customClass="CandleStickChartView" customModule="Charts">
+                            <rect key="frame" x="0.0" y="400.5" width="414" height="300"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="300" id="rqk-XY-KMy"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYf-54-lz5" customClass="LineChartView" customModule="Charts">
+                            <rect key="frame" x="0.0" y="70.5" width="414" height="300"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="300" id="iU3-qN-r9c"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmA-mR-85J">
+                            <rect key="frame" x="168" y="20" width="78" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fvT-zd-1L1" customClass="CandleStickChartView" customModule="Charts">
+                            <rect key="frame" x="0.0" y="730.5" width="414" height="300"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="300" id="Liv-Ny-6vp"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ydo-A6-kZ1" customClass="CandleStickChartView" customModule="Charts">
+                            <rect key="frame" x="0.0" y="1060.5" width="414" height="300"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="300" id="AbF-uY-Gm3"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="fvT-zd-1L1" firstAttribute="trailing" secondItem="VYy-GP-OZ3" secondAttribute="trailing" id="02d-Vl-eSR"/>
+                        <constraint firstItem="UmA-mR-85J" firstAttribute="centerX" secondItem="c2D-ZQ-fMl" secondAttribute="centerX" id="2I8-Dv-ywM"/>
+                        <constraint firstItem="UYf-54-lz5" firstAttribute="leading" secondItem="c2D-ZQ-fMl" secondAttribute="leading" id="2TC-fA-iTc"/>
+                        <constraint firstItem="Ydo-A6-kZ1" firstAttribute="trailing" secondItem="VYy-GP-OZ3" secondAttribute="trailing" id="58f-Q5-714"/>
+                        <constraint firstItem="Iod-wT-our" firstAttribute="leading" secondItem="c2D-ZQ-fMl" secondAttribute="leading" id="9yQ-ZU-LuS"/>
+                        <constraint firstItem="UmA-mR-85J" firstAttribute="top" secondItem="c2D-ZQ-fMl" secondAttribute="top" constant="20" id="BWz-gx-lZr"/>
+                        <constraint firstItem="Ydo-A6-kZ1" firstAttribute="top" secondItem="fvT-zd-1L1" secondAttribute="bottom" constant="30" id="Bx9-fe-Tby"/>
+                        <constraint firstItem="UYf-54-lz5" firstAttribute="width" secondItem="c2D-ZQ-fMl" secondAttribute="width" id="CRl-X8-WE5"/>
+                        <constraint firstAttribute="bottom" secondItem="Ydo-A6-kZ1" secondAttribute="bottom" constant="50" id="DDc-vj-XK9"/>
+                        <constraint firstItem="Ydo-A6-kZ1" firstAttribute="leading" secondItem="VYy-GP-OZ3" secondAttribute="leading" id="U6W-wb-Al9"/>
+                        <constraint firstItem="fvT-zd-1L1" firstAttribute="leading" secondItem="VYy-GP-OZ3" secondAttribute="leading" id="Y7H-jm-LHJ"/>
+                        <constraint firstItem="fvT-zd-1L1" firstAttribute="top" secondItem="Iod-wT-our" secondAttribute="bottom" constant="30" id="ZIe-i1-F1J"/>
+                        <constraint firstAttribute="trailing" secondItem="UYf-54-lz5" secondAttribute="trailing" id="epv-LI-DwG"/>
+                        <constraint firstItem="Iod-wT-our" firstAttribute="top" secondItem="UYf-54-lz5" secondAttribute="bottom" constant="30" id="f7b-oU-cQb"/>
+                        <constraint firstItem="UYf-54-lz5" firstAttribute="top" secondItem="UmA-mR-85J" secondAttribute="bottom" constant="30" id="irQ-6p-owq"/>
+                        <constraint firstItem="Iod-wT-our" firstAttribute="trailing" secondItem="c2D-ZQ-fMl" secondAttribute="trailing" id="wru-60-bju"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="VYy-GP-OZ3"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="ip8-ps-g5d"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="c2D-ZQ-fMl" secondAttribute="bottom" id="CLD-H6-V8Z"/>
+                <constraint firstAttribute="trailing" secondItem="c2D-ZQ-fMl" secondAttribute="trailing" id="F94-Cx-fli"/>
+                <constraint firstItem="c2D-ZQ-fMl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="g1M-5i-bKB"/>
+                <constraint firstItem="c2D-ZQ-fMl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="kI0-IY-pVU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+</document>
